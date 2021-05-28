@@ -7,21 +7,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <title>Lista zadań</title>
     <meta property="og:image" content="images\istockphoto-867290418-170667a.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
     <link rel="icon" href="images\istockphoto-867290418-170667a.jpg">
     <link href="style.css" rel="stylesheet">
     <script defer src="js\script.js"></script>
 </head>
 
 <body>
-<form class="js-form">
-    <input class="js-newTask">
-    <button> Dodaj zadanie</button>
-</form>
+    <main class="container">
+        <header>
+            <h1>Lista zadań</h1>
+        </header>
 
-<ul class="js-tasks"></ul>
+        <section class="section">
+            <h2 class="section_header">Dodaj nowe zadanie</h2>
+            <form class="form js-form">
+                <input class="js-newTask" placeholder="Co jest do zrobienia?">
+                <button class="form__button form_button--add"> Dodaj zadanie</button>
+                </fieldset>
+            </form>
+            <section class="section">
+                <div class="section__container">
+                    <h2 class="section__header">Lista zadań</h2>
+                    <div class="button__list js-buttons"></div>
+                </div>
+            </section>
+
+            <ul class="tasks js-tasks"></ul>
+
+        </section>
+    </main>
 
 
 </body>
+
 </html>
