@@ -3,7 +3,7 @@
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
-            content: newTaskContent,
+            content: newTaskContent, done: false
         });
 
         render();
@@ -19,13 +19,22 @@
         render();
     };
 
+    const bindEvents = () => {
+        const removeButtons = document.querySelectorAll(".js-remove");
+        removeButtons.forEach((removeButton, index) = () => {
+            removeButton.addEventListener("click", () => {
+                removeTask(index);
+            });
+        });
+    };
+
     const render = () => {
         let htmlString = "";
 
         for (const task of tasks) {
             htmlString += `
             <li
-            class="list__item${task.done ? " list__item--done" : ""}">
+            class="(task__button js-done)${task.done ? " list__item--done" : ""}">
             <button class="js-done"> zrobione? </button>
             <button class="js-remove">usuń</button>
               ${task.content}
