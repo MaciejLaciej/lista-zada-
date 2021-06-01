@@ -42,20 +42,20 @@
         for (const task of tasks) {
             tasksListHTMLContent += `
             <li
-                class="task__button js-done"
+                class="tasks__item js-task"
             >
-                <button class="task__button tasks__button-toggleDone js-toggleDone">
+                <button class="tasks__button tasks__button-toggleDone js-toggleDone">
                 ${task.done ? "✔" : " "}
                 </button>
-                <span class="tasks_content${task.done ? "tasks__content--done" : ""}">${task.content}</span>
-                <button class="task__button tasks__button-toggleDone js-toggleDone">
+                <span class="tasks__content${task.done ? "tasks__content--done" : ""}">${task.content}</span>
+                <button class="tasks__button tasks__button--remove js-remove">
                 🗑
                 </button>
             </li>
             `;
         }; 
 
-        document.querySelector(".js-tasks").innerHTML = tasksListHTML;
+        document.querySelector(".js-tasks").innerHTML = tasksListHTMLContent;
 
         bindRemoveEvents();
         bindToggleDoneEvents();
