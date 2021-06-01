@@ -37,10 +37,10 @@
     };
 
     const render = () => {
-        let tasksListHTML = "";
+        let tasksListHTMLContent = "";
 
         for (const task of tasks) {
-            tasksListHTML += `
+            tasksListHTMLContent += `
             <li
                 class="task__button js-done"
             >
@@ -53,7 +53,7 @@
                 </button>
             </li>
             `;
-        };
+        }; 
 
         document.querySelector(".js-tasks").innerHTML = tasksListHTML;
 
