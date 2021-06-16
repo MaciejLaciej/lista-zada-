@@ -90,7 +90,7 @@
         }
 
         buttonsElement.innerHTML = `
-        <button class="buttons__button js-toggleHideDoneTasks">
+        <button class="buttons__button js-toggleHideDoneTasksButton">
             ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
         </button>
         <button class="buttons__button js-markAllDoneButton"
