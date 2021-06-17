@@ -1,7 +1,7 @@
 # To-do list
 
 ## Demo
-![THE LIST](https://maciejlaciej.github.io/lista-zadan/)
+[THE LIST](https://maciejlaciej.github.io/lista-zadan/)
 
 ## Decription
 This is an easy list of activities that can be inserted and, depending on theirs status, marked as complited or not.
